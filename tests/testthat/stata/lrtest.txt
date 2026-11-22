@@ -1,0 +1,2 @@
+Likelihood-ratio test                                 LR chi2(1)  =      9.12
+(Assumption: red nested in full)                      Prob > chi2 =    0.0025

@@ -1,0 +1,25 @@
+note: 8.cyl != 0 predicts failure perfectly
+      8.cyl dropped and 14 obs not used
+
+Iteration 0:   log likelihood = -9.5347116
+Iteration 1:   log likelihood = -8.1594538
+Iteration 2:   log likelihood = -8.0512028
+Iteration 3:   log likelihood = -8.0503651
+Iteration 4:   log likelihood =  -8.050365
+
+Logistic regression                             Number of obs     =         18
+                                                LR chi2(2)        =       2.97
+                                                Prob > chi2       =     0.2267
+Log likelihood =  -8.050365                     Pseudo R2         =     0.1557
+
+------------------------------------------------------------------------------
+          vs |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         mpg |    -.08961   .2241659    -0.40   0.689    -.5289671    .3497471
+             |
+         cyl |
+          6  |   -2.69541   2.265615    -1.19   0.234    -7.135934    1.745115
+          8  |          0  (empty)
+             |
+       _cons |   4.753315    6.37204     0.75   0.456    -7.735654    17.24228
+------------------------------------------------------------------------------

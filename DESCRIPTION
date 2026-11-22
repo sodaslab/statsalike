@@ -1,0 +1,60 @@
+Package: statsalike
+Type: Package
+Title: 'Stata'-Style Tables, Summaries and Regressions for Data Frames
+Version: 0.2.1
+Authors@R:
+    person("Stefan", "Kirchner", email = "s.kirchner@fau.de", role = c("aut", "cre"))
+Description: Provides commands that reproduce the output of the 'Stata'
+    commands describe, codebook, summarize, tabulate (including tab1, tab2
+    and the options summarize and generate), table (in the syntax of 'Stata'
+    17 and later), pwcorr, ttest, oneway, anova, alpha, regress, logit,
+    probit, mlogit, ologit, oprobit, poisson, nbreg, tobit, margins,
+    marginsplot, predict, estat, test, lincom, contrast, lrtest, linktest,
+    lroc, lsens, avplot, cprplot and etable. The package is meant for users
+    who move from 'Stata' to R or work with both and want familiar
+    descriptive tables and routines without combining several packages. All
+    functions that analyze data take a data frame as their first argument,
+    so they work with pipes, and support tidy evaluation, grouping with
+    group_by() from 'dplyr' (the equivalent of the by prefix in 'Stata'),
+    frequency, analytic, importance and sampling weights, robust and
+    cluster-robust standard errors, and value and variable labels from
+    'haven'. Results are 'tibble' data frames that print in the layout of
+    'Stata' output and can be exported to HTML and 'Word' (DOCX) files. The
+    commands are an independent implementation in R that uses no 'Stata'
+    code. Their output was compared automatically with that of 'Stata' 15.1.
+    'Stata' is a registered trademark of StataCorp LLC. This package is not
+    affiliated with or endorsed by StataCorp.
+License: GPL-3
+URL: https://github.com/SODASLab/statsalike
+BugReports: https://github.com/SODASLab/statsalike/issues
+Language: en-US
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr (>= 1.1.0),
+    rlang (>= 1.0.0),
+    stats,
+    tibble (>= 3.1.0),
+    tidyselect (>= 1.2.0),
+    utils
+Suggests:
+    flextable (>= 0.9.0),
+    ggplot2 (>= 3.4.0),
+    haven,
+    insight,
+    lme4,
+    car,
+    MASS,
+    nnet,
+    officer (>= 0.6.0),
+    parameters,
+    performance,
+    pscl,
+    sandwich,
+    survival,
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1

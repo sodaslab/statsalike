@@ -1,0 +1,43 @@
+Logistic model for am
+
+              -------- True --------
+Classified |         D            ~D  |      Total
+-----------+--------------------------+-----------
+     +     |        12             1  |         13
+     -     |         1            18  |         19
+-----------+--------------------------+-----------
+   Total   |        13            19  |         32
+
+Classified + if predicted Pr(D) >= .5
+True D defined as am != 0
+--------------------------------------------------
+Sensitivity                     Pr( +| D)   92.31%
+Specificity                     Pr( -|~D)   94.74%
+Positive predictive value       Pr( D| +)   92.31%
+Negative predictive value       Pr(~D| -)   94.74%
+--------------------------------------------------
+False + rate for true ~D        Pr( +|~D)    5.26%
+False - rate for true D         Pr( -| D)    7.69%
+False + rate for classified +   Pr(~D| +)    7.69%
+False - rate for classified -   Pr( D| -)    5.26%
+--------------------------------------------------
+Correctly classified                        93.75%
+--------------------------------------------------
+
+
+Logistic model for am, goodness-of-fit test
+
+       number of observations =        32
+ number of covariate patterns =        31
+             Pearson chi2(28) =        14.98
+                  Prob > chi2 =         0.9787
+
+
+Logistic model for am, goodness-of-fit test
+
+  (Table collapsed on quantiles of estimated probabilities)
+
+       number of observations =        32
+             number of groups =         4
+      Hosmer-Lemeshow chi2(2) =         0.36
+                  Prob > chi2 =         0.8355

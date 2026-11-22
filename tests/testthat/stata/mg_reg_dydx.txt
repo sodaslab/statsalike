@@ -1,0 +1,15 @@
+Average marginal effects                        Number of obs     =         32
+Model VCE    : OLS
+
+Expression   : Linear prediction, predict()
+dy/dx w.r.t. : wt 1.am hp
+
+------------------------------------------------------------------------------
+             |            Delta-method
+             |      dy/dx   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+          wt |  -3.969111   .9408172    -4.22   0.000    -5.899509   -2.038714
+        1.am |   .0437827    1.50894     0.03   0.977    -3.052307    3.139873
+          hp |  -.0269493   .0097959    -2.75   0.010    -.0470489   -.0068498
+------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.

@@ -1,0 +1,4 @@
+Logistic model for am
+
+number of observations =       32
+area under ROC curve   =   0.9838

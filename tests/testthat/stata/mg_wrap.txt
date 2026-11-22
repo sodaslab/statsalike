@@ -1,0 +1,20 @@
+Average marginal effects                        Number of obs     =         32
+Model VCE    : OLS
+
+Expression   : Linear prediction, predict()
+dy/dx w.r.t. : gewicht_in_tausend_pfund pferdestaerken_brutto
+               hubraum_kubikzoll 6.cyl 8.cyl
+
+-------------------------------------------------------------------------------
+              |            Delta-method
+              |      dy/dx   Std. Err.      t    P>|t|     [95% Conf. Interval]
+--------------+----------------------------------------------------------------
+gewicht_in_~d |  -3.428626   1.055455    -3.25   0.003    -5.598145   -1.259106
+pferdestaer~o |  -.0235165   .0122163    -1.93   0.065    -.0486275    .0015945
+hubraum_kub~l |   .0041989   .0129172     0.33   0.748    -.0223528    .0307505
+              |
+          cyl |
+           6  |  -3.466011   1.462979    -2.37   0.026    -6.473208   -.4588139
+           8  |  -3.753227   2.813996    -1.33   0.194    -9.537478    2.031024
+-------------------------------------------------------------------------------
+Note: dy/dx for factor levels is the discrete change from the base level.

@@ -1,0 +1,5 @@
+         Deviance goodness-of-fit =  210.3919
+         Prob > chi2(50)          =    0.0000
+
+         Pearson goodness-of-fit  =  213.0761
+         Prob > chi2(50)          =    0.0000

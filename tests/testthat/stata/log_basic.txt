@@ -1,0 +1,19 @@
+Iteration 0:   log likelihood = -21.614867
+Iteration 1:   log likelihood = -6.8074557
+Iteration 2:   log likelihood = -5.2543838
+Iteration 3:   log likelihood = -5.0297399
+Iteration 4:   log likelihood = -5.0295553
+Iteration 5:   log likelihood = -5.0295552
+
+Logistic regression                             Number of obs     =         32
+                                                LR chi2(2)        =      33.17
+                                                Prob > chi2       =     0.0000
+Log likelihood = -5.0295552                     Pseudo R2         =     0.7673
+
+------------------------------------------------------------------------------
+          am |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+          wt |  -8.083475   3.068675    -2.63   0.008    -14.09797   -2.068982
+          hp |   .0362556   .0177342     2.04   0.041     .0014973    .0710139
+       _cons |    18.8663   7.443558     2.53   0.011     4.277192     33.4554
+------------------------------------------------------------------------------

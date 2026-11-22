@@ -1,0 +1,20 @@
+Iteration 0:   log likelihood = -21.614867
+Iteration 1:   log likelihood = -6.0705899
+Iteration 2:   log likelihood =  -5.020805
+Iteration 3:   log likelihood = -4.9309158
+Iteration 4:   log likelihood = -4.9302539
+Iteration 5:   log likelihood = -4.9302536
+
+Probit regression                               Number of obs     =         32
+                                                LR chi2(2)        =      33.37
+                                                Prob > chi2       =     0.0000
+Log likelihood = -4.9302536                     Pseudo R2         =     0.7719
+
+------------------------------------------------------------------------------
+          am |      Coef.   Std. Err.      z    P>|z|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+          wt |  -4.542207   1.552405    -2.93   0.003    -7.584866   -1.499548
+          hp |   .0212591   .0098258     2.16   0.030     .0020009    .0405172
+       _cons |   10.40555   3.602206     2.89   0.004     3.345355    17.46574
+------------------------------------------------------------------------------
+Note: 3 failures and 0 successes completely determined.

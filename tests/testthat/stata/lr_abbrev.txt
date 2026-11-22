@@ -1,0 +1,2 @@
+Likelihood-ratio test                                 LR chi2(1)  =      9.12
+(Assumption: modell_nur_g~t nested in modell_mit_l~g) Prob > chi2 =    0.0025

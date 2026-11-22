@@ -1,0 +1,12 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^examples$
+^cran-comments\.md$
+^Kapitel
+^Todo$
+^figure$
+^cmp\.log$
+^test-.*\.R$
+^\.gitignore$
+^\.github$
+^\.git$

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Variables</title>
+<style>
+body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #000; margin: 2em; }
+h2 { font-family: Consolas, 'Courier New', monospace; font-size: 11pt; font-weight: bold; margin: 2em 0 0.6em; }
+table.st { border-collapse: collapse; margin: 0.4em 0 1em; }
+table.st th, table.st td { padding: 2px 10px; text-align: right; white-space: nowrap; font-weight: normal; }
+table.st .stub { text-align: right; border-right: 1px solid #000; }
+table.st .left { text-align: left; }
+table.st .vbar { border-right: 1px solid #000; }
+table.st tr.rule > * { border-bottom: 1px solid #000; }
+table.st.frame { border-top: 1px solid #000; border-bottom: 1px solid #000; }
+table.st th.span { text-align: center; }
+pre.st-note { font-family: Consolas, 'Courier New', monospace; font-size: 9.5pt; margin: 0.3em 0 1em; }
+p.st-heading { font-weight: bold; margin: 1.2em 0 0.3em; }
+p.st-key { font-style: italic; margin: 0.3em 0; }
+</style>
+</head>
+<body>
+<h2>Variables</h2>
+<p>Contains data from issp</p>
+<p>Observations: 6,119</p>
+<p>Variables: 14</p>
+<table class="st frame">
+<tr class="rule"><th class="stub left">Variable name</th><th class="left">Storage type</th><th class="left">Display format</th><th class="left">Value label</th><th class="left">Variable label</th></tr>
+<tr><td class="stub left">country</td><td class="left">dbl+lbl</td><td class="left">%10.0g</td><td class="left">labels(32)</td><td class="left">Country</td></tr>
+<tr><td class="stub left">SEX</td><td class="left">dbl+lbl</td><td class="left">%10.0g</td><td class="left">labels(3)</td><td class="left">R: Sex</td></tr>
+<tr><td class="stub left">AGE</td><td class="left">dbl+lbl</td><td class="left">%10.0g</td><td class="left">labels(3)</td><td class="left">R: Age</td></tr>
+<tr><td class="stub left">DEGREE</td><td class="left">dbl+lbl</td><td class="left">%10.0g</td><td class="left">labels(9)</td><td class="left">R: Education II: highest education level</td></tr>
+<tr><td class="stub left">WRKHRS</td><td class="left">dbl+lbl</td><td class="left">%10.0g</td><td class="left">labels(7)</td><td class="left">R: Hours worked weekly</td></tr>
+</table>
+<h2>Education</h2>
+<table class="st">
+<tr class="rule"><th class="stub">DEGREE</th><th>Freq.</th><th>Percent</th><th>Cum.</th></tr>
+<tr><td class="stub">No formal qualification</td><td>26</td><td>0.42</td><td>0.42</td></tr>
+<tr><td class="stub">Lowest formal qualification</td><td>116</td><td>1.90</td><td>2.32</td></tr>
+<tr><td class="stub">Above lowest qualification</td><td>1,330</td><td>21.74</td><td>24.06</td></tr>
+<tr><td class="stub">Higher secondary completed</td><td>1,429</td><td>23.35</td><td>47.41</td></tr>
+<tr><td class="stub">Above higher secondary level</td><td>1,236</td><td>20.20</td><td>67.61</td></tr>
+<tr><td class="stub">University degree completed</td><td>1,959</td><td>32.02</td><td>99.62</td></tr>
+<tr class="rule"><td class="stub">&lt;NA&gt;</td><td>23</td><td>0.38</td><td>100.00</td></tr>
+<tr><td class="stub">Total</td><td>6,119</td><td>100.00</td><td></td></tr>
+</table>
+<h2>Employer by country (weighted)</h2>
+<p class="st-key">Key: frequency / row percentage</p>
+<table class="st">
+<tr><th class="stub"></th><th class="span vbar" colspan="2">TYPORG2</th><th colspan="1"></th></tr>
+<tr class="rule"><th class="stub">country</th><th>Public employer</th><th class="vbar">Private employer</th><th>Total</th></tr>
+<tr><td class="stub">DE-Germany</td><td>429.41</td><td class="vbar">1,144.68</td><td>1,574.10</td></tr>
+<tr class="rule"><td class="stub"></td><td>27.28</td><td class="vbar">72.72</td><td>100.00</td></tr>
+<tr><td class="stub">SE-Sweden</td><td>489.83</td><td class="vbar">580.79</td><td>1,070.62</td></tr>
+<tr class="rule"><td class="stub"></td><td>45.75</td><td class="vbar">54.25</td><td>100.00</td></tr>
+<tr><td class="stub">GB-GBN Great Britain</td><td>484.71</td><td class="vbar">1,245.69</td><td>1,730.40</td></tr>
+<tr class="rule"><td class="stub"></td><td>28.01</td><td class="vbar">71.99</td><td>100.00</td></tr>
+<tr><td class="stub">US-United States</td><td>282.09</td><td class="vbar">1,120.80</td><td>1,402.89</td></tr>
+<tr class="rule"><td class="stub"></td><td>20.11</td><td class="vbar">79.89</td><td>100.00</td></tr>
+<tr><td class="stub">Total</td><td>1,686.04</td><td class="vbar">4,091.96</td><td>5,778</td></tr>
+<tr><td class="stub"></td><td>29.18</td><td class="vbar">70.82</td><td>100.00</td></tr>
+</table>
+<h2>Working hours by education</h2>
+<table class="st">
+<tr><th class="stub"></th><th class="span" colspan="3">Summary of R: Hours worked weekly</th></tr>
+<tr class="rule"><th class="stub">DEGREE</th><th>Mean</th><th>Std. dev.</th><th>Freq.</th></tr>
+<tr><td class="stub">No formal qualification</td><td>44.27273</td><td>19.11591</td><td>11</td></tr>
+<tr><td class="stub">Lowest formal qualification</td><td>41.06667</td><td>15.03085</td><td>30</td></tr>
+<tr><td class="stub">Above lowest qualification</td><td>36.28571</td><td>13.13301</td><td>539</td></tr>
+<tr><td class="stub">Higher secondary completed</td><td>39.027</td><td>14.44559</td><td>852</td></tr>
+<tr><td class="stub">Above higher secondary level</td><td>38.23087</td><td>12.62849</td><td>745</td></tr>
+<tr class="rule"><td class="stub">University degree completed</td><td>39.8343</td><td>12.63312</td><td>1,376</td></tr>
+<tr><td class="stub">Total</td><td>38.79032</td><td>13.25772</td><td>3,553</td></tr>
+</table>
+<h2>Age and working hours by sex</h2>
+<table class="st frame">
+<tr><th class="stub left"></th><th class="span" colspan="3">R: Sex</th></tr>
+<tr class="rule"><th class="stub left"></th><th>Male</th><th>Female</th><th>Total</th></tr>
+<tr><td class="stub left">Mean AGE</td><td>51.07544</td><td>50.59563</td><td>50.82367</td></tr>
+<tr><td class="stub left">Mean WRKHRS</td><td>42.81061</td><td>34.88304</td><td>38.78999</td></tr>
+<tr><td class="stub left">Std. dev. AGE</td><td>17.53795</td><td>17.18343</td><td>17.35306</td></tr>
+<tr><td class="stub left">Std. dev. WRKHRS</td><td>12.66145</td><td>12.63003</td><td>13.25055</td></tr>
+</table>
+</body>
+</html>

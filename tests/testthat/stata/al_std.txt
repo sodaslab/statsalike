@@ -1,0 +1,6 @@
+Test scale = mean(standardized items)
+Reversed items:  mpg drat
+
+Average interitem correlation:      0.7382
+Number of items in the scale:            5
+Scale reliability coefficient:      0.9338
